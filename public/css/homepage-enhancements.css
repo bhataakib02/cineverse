@@ -687,6 +687,10 @@
   background: var(--tollywood-gradient);
 }
 
+.category-all::before {
+  background: var(--all-movies-gradient);
+}
+
 .category-card:hover::before {
   opacity: 0.1;
 }
@@ -711,6 +715,10 @@
   box-shadow: 0 20px 40px rgba(250, 112, 154, 0.3);
 }
 
+.category-all:hover {
+  border-color: rgba(91, 155, 213, 0.5);
+  box-shadow: 0 20px 40px rgba(91, 155, 213, 0.3);
+}
 
 .category-card h3 {
   font-family: 'Orbitron', sans-serif;

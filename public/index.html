@@ -60,15 +60,15 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">All Movies</a></li>
-            <li><a href="index.html">Hollywood</a></li>
-            <li><a href="index.html">Bollywood</a></li>
-            <li><a href="index.html">Tollywood</a></li>
-            <li><a href="index.html">Analytics</a></li>
-            <li><a href="index.html">Compare</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Contact</a></li>
-            <li><a href="index.html">Admin</a></li>
+            <li><a href="movies.html">All Movies</a></li>
+            <li><a href="hollywood.html">Hollywood</a></li>
+            <li><a href="bollywood.html">Bollywood</a></li>
+            <li><a href="tollywood.html">Tollywood</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
         </ul>
         <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">🌙</button>
         <button class="menu-toggle" id="menu-toggle">
@@ -198,6 +198,11 @@
             <p class="section-subtitle">Discover movies from different industries</p>
         </div>
         <div class="categories-grid">
+            <a href="movies.html" class="category-card category-all">
+                <h3>All Movies</h3>
+                <p id="all-movies-count">Loading...</p>
+                <div class="category-arrow">→</div>
+            </a>
             <a href="hollywood.html" class="category-card category-hollywood">
                 <h3>Hollywood</h3>
                 <p id="hollywood-count">Loading...</p>
@@ -258,10 +263,15 @@
                 }
                 
                 // Load category counts
+                const allMoviesCount = movies.length;
                 const hollywoodCount = movies.filter(m => m.category === 'Hollywood').length;
                 const bollywoodCount = movies.filter(m => m.category === 'Bollywood').length;
                 const tollywoodCount = movies.filter(m => m.category === 'Tollywood').length;
                 
+                const allMoviesCountEl = document.getElementById('all-movies-count');
+                if (allMoviesCountEl) {
+                    allMoviesCountEl.textContent = `${allMoviesCount} Movies`;
+                }
                 document.getElementById('hollywood-count').textContent = `${hollywoodCount} Movies`;
                 document.getElementById('bollywood-count').textContent = `${bollywoodCount} Movies`;
                 document.getElementById('tollywood-count').textContent = `${tollywoodCount} Movies`;
@@ -346,20 +356,21 @@
                     return url && !url.includes('placeholder');
                 });
                 
-                // Build poster list: prioritize Saiyaara, then get 3 other movies (excluding Avatar duplicates)
-                let posterMovies = [];
+                // Build poster list: get 2 unique movies, then duplicate them for left and right sides
+                // Total: 4 posters (2 on left, 2 on right) - same 2 movies on both sides
+                let uniqueMovies = [];
                 const seen = new Set();
                 let avatarCount = 0;
                 
                 // Always add Saiyaara first if found
                 if (saiyaara && getPosterURL(saiyaara) && !getPosterURL(saiyaara).includes('placeholder')) {
-                    posterMovies.push(saiyaara);
+                    uniqueMovies.push(saiyaara);
                     seen.add((saiyaara.title || '').toLowerCase());
                 }
                 
-                // Add other movies (allow only 1 Avatar total)
+                // Add one more movie until we have exactly 2 unique movies
                 for (const movie of allValidMovies) {
-                    if (posterMovies.length >= 4) break;
+                    if (uniqueMovies.length >= 2) break;
                     
                     const title = (movie.title || '').toLowerCase();
                     const isAvatar = title.includes('avatar');
@@ -368,10 +379,25 @@
                     if (seen.has(title)) continue;
                     if (isAvatar && avatarCount >= 1) continue;
                     
-                    posterMovies.push(movie);
+                    uniqueMovies.push(movie);
                     seen.add(title);
                     if (isAvatar) avatarCount++;
                 }
+                
+                // If we still don't have 2 movies, fill with any valid movie
+                if (uniqueMovies.length < 2) {
+                    for (const movie of allValidMovies) {
+                        if (uniqueMovies.length >= 2) break;
+                        const title = (movie.title || '').toLowerCase();
+                        if (!seen.has(title)) {
+                            uniqueMovies.push(movie);
+                            seen.add(title);
+                        }
+                    }
+                }
+                
+                // Duplicate the 2 movies to create 4 posters (2 on left, 2 on right - same movies)
+                const posterMovies = [...uniqueMovies, ...uniqueMovies];
                 
                 const postersContainer = document.getElementById('hero-posters');
                 if (postersContainer && posterMovies.length > 0) {

@@ -25,6 +25,7 @@
   --hollywood-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --bollywood-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --tollywood-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  --all-movies-gradient: linear-gradient(135deg, #5b9bd5 0%, #9b8fb8 50%, #d4a5c7 100%);
   
   /* Elegant Colors - Subtle & Classy */
   --neon-blue: #5b9bd5;
@@ -683,7 +684,7 @@ body {
 
 /* ========== CATEGORY BANNERS ========== */
 .category-banner {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -703,7 +704,7 @@ body {
 
 .category-banner h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: var(--text-light);
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
@@ -1716,27 +1717,29 @@ body {
   animation: float 20s infinite ease-in-out;
 }
 
+/* Left side posters - 2 posters */
 .hero-poster:nth-child(1) {
-  top: 10%;
-  left: 10%;
+  top: 15%;
+  left: 8%;
   animation-delay: 0s;
-}
-
-.hero-poster:nth-child(2) {
-  top: 20%;
-  right: 15%;
-  animation-delay: 3s;
 }
 
 .hero-poster:nth-child(3) {
   bottom: 15%;
-  left: 20%;
+  left: 12%;
   animation-delay: 6s;
 }
 
+/* Right side posters - 2 posters */
+.hero-poster:nth-child(2) {
+  top: 20%;
+  right: 12%;
+  animation-delay: 3s;
+}
+
 .hero-poster:nth-child(4) {
-  bottom: 10%;
-  right: 10%;
+  bottom: 12%;
+  right: 8%;
   animation-delay: 9s;
 }
 
