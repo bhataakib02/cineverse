@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Movies — CineVerse Analytics</title>
+    <meta name="description" content="Compare up to 3 movies side-by-side. Compare box office performance, ratings, cast, and more.">
+    <meta name="keywords" content="compare movies, movie comparison, box office comparison, film comparison tool">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cineverse.com/compare.html">
+    <meta property="og:title" content="Compare Movies — CineVerse Analytics">
+    <meta property="og:description" content="Compare up to 3 movies side-by-side. Compare box office performance, ratings, cast, and more.">
+    <meta property="og:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compare Movies — CineVerse Analytics">
+    <meta name="twitter:description" content="Compare up to 3 movies side-by-side. Compare box office performance, ratings, cast, and more.">
+    <meta name="twitter:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="logo">🎬 CineVerse</div>
+        <ul class="nav-links">
+            <li><a href="index.html">🎬 Home</a></li>
+            <li><a href="movies.html">🎞️ All Movies</a></li>
+            <li><a href="hollywood.html">🌍 Hollywood</a></li>
+            <li><a href="bollywood.html">🎥 Bollywood</a></li>
+            <li><a href="tollywood.html">🎭 Tollywood</a></li>
+            <li><a href="top10.html">🏅 Top 10</a></li>
+            <li><a href="compare.html" class="active">⚖️ Compare</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="contact.html">💌 Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+
+    <section style="padding: 4rem 2rem; max-width: 1600px; margin: 0 auto;">
+        <h1 style="text-align: center; font-family: 'Orbitron', sans-serif; font-size: 3.5rem; margin-bottom: 1rem; color: var(--text);">
+            ⚖️ Compare Movies
+        </h1>
+        <p style="text-align: center; color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 3rem;">
+            Select up to 3 movies to compare side by side
+        </p>
+
+        <!-- Movie Selectors -->
+        <div class="compare-selectors">
+            <div class="compare-selector-card">
+                <h3>Movie 1</h3>
+                <input type="text" id="movie1-search" placeholder="🔍 Search and select movie..." autocomplete="off">
+                <div id="movie1-suggestions" class="suggestions-dropdown"></div>
+                <div id="movie1-display" class="selected-movie-display"></div>
+            </div>
+            <div class="compare-selector-card">
+                <h3>Movie 2</h3>
+                <input type="text" id="movie2-search" placeholder="🔍 Search and select movie..." autocomplete="off">
+                <div id="movie2-suggestions" class="suggestions-dropdown"></div>
+                <div id="movie2-display" class="selected-movie-display"></div>
+            </div>
+            <div class="compare-selector-card">
+                <h3>Movie 3</h3>
+                <input type="text" id="movie3-search" placeholder="🔍 Search and select movie..." autocomplete="off">
+                <div id="movie3-suggestions" class="suggestions-dropdown"></div>
+                <div id="movie3-display" class="selected-movie-display"></div>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div id="comparison-table" class="comparison-table" style="display: none;">
+            <h2 style="text-align: center; margin: 3rem 0 2rem; color: var(--text);">📊 Detailed Comparison</h2>
+            <div class="comparison-grid">
+                <!-- Comparison data will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Visual Comparison Summary -->
+        <div id="comparison-summary" class="comparison-summary" style="display: none; margin-top: 4rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text);">📊 Quick Comparison Summary</h2>
+            <div class="summary-cards">
+                <!-- Summary cards will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p style="font-size: 0.75rem; line-height: 1.5; margin: 0;">Your Ultimate Box Office Analytics Platform | © 2025 CineVerse Analytics | Developed by Mohammad Aakib Bhat</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">↑</button>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/compare.js"></script>
+</body>
+</html>
+
+

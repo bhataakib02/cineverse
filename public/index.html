@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 CineVerse — Global Cinema Stats in ₹</title>
+    <meta name="description" content="Explore cinema beyond borders with box office data in Indian Rupees. Hollywood, Bollywood, and Tollywood movie analytics.">
+    <meta name="keywords" content="movies, box office, cinema analytics, hollywood, bollywood, tollywood, movie revenue, box office mojo, film statistics">
+    <meta name="author" content="Mohammad Aakib Bhat">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cineverse.com/">
+    <meta property="og:title" content="🎬 CineVerse — Global Cinema Stats in ₹">
+    <meta property="og:description" content="Explore cinema beyond borders with box office data in Indian Rupees. Hollywood, Bollywood, and Tollywood movie analytics.">
+    <meta property="og:image" content="https://cineverse.com/images/og-image.jpg">
+    <meta property="og:site_name" content="CineVerse Analytics">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cineverse.com/">
+    <meta name="twitter:title" content="🎬 CineVerse — Global Cinema Stats in ₹">
+    <meta name="twitter:description" content="Explore cinema beyond borders with box office data in Indian Rupees. Hollywood, Bollywood, and Tollywood movie analytics.">
+    <meta name="twitter:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="film-reel"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🎬 CineVerse</div>
+        <ul class="nav-links">
+            <li><a href="index.html">🎬 Home</a></li>
+            <li><a href="movies.html">🎞️ All Movies</a></li>
+            <li><a href="hollywood.html">🌍 Hollywood</a></li>
+            <li><a href="bollywood.html">🎥 Bollywood</a></li>
+            <li><a href="tollywood.html">🎭 Tollywood</a></li>
+            <li><a href="top10.html">🏅 Top 10</a></li>
+            <li><a href="analytics.html">📊 Analytics</a></li>
+            <li><a href="compare.html">⚖️ Compare</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="contact.html">💌 Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🎬 CineVerse</h1>
+        <p>Global Cinema Stats in ₹</p>
+        <p style="font-size: 1.2rem; opacity: 0.8;">Explore Cinema Beyond Borders — In Indian Rupees (₹)</p>
+        <div class="hero-buttons">
+            <a href="movies.html" class="btn btn-primary">Explore Movies</a>
+            <a href="top10.html" class="btn btn-secondary">Top 10 Box Office</a>
+            <button class="btn btn-secondary" onclick="showRandomMovie()" style="cursor: pointer;">🎲 Random Movie</button>
+        </div>
+        
+        <!-- Hero rotating posters background -->
+        <div class="hero-posters" id="hero-posters">
+            <!-- Posters will be loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Top 10 Carousel -->
+    <section style="padding: 4rem 2rem; max-width: 1400px; margin: 0 auto;">
+        <h2 style="text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2.5rem; margin-bottom: 3rem; color: var(--text);">
+            🌟 Top 10 Worldwide Grossing Movies
+        </h2>
+        <div id="top10-carousel" class="movies-grid">
+            <!-- Movies will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section style="padding: 4rem 2rem; max-width: 1400px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div class="stat-card" style="background: var(--glass-bg); backdrop-filter: blur(20px); padding: 2rem; border-radius: 20px; border: 1px solid var(--glass-border); text-align: center; transition: transform 0.3s ease;">
+                <h3 id="movies-count" style="font-size: 3rem; margin-bottom: 0.5rem; color: var(--neon-blue); font-family: 'Orbitron', sans-serif;">...</h3>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">Movies</p>
+            </div>
+            <div class="stat-card" style="background: var(--glass-bg); backdrop-filter: blur(20px); padding: 2rem; border-radius: 20px; border: 1px solid var(--glass-border); text-align: center; transition: transform 0.3s ease;">
+                <h3 style="font-size: 3rem; margin-bottom: 0.5rem; color: var(--neon-purple); font-family: 'Orbitron', sans-serif;">3</h3>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">Categories</p>
+            </div>
+            <div class="stat-card" style="background: var(--glass-bg); backdrop-filter: blur(20px); padding: 2rem; border-radius: 20px; border: 1px solid var(--glass-border); text-align: center; transition: transform 0.3s ease;">
+                <h3 style="font-size: 3rem; margin-bottom: 0.5rem; color: var(--neon-pink); font-family: 'Orbitron', sans-serif;">₹</h3>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">Indian Rupees</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p style="font-size: 0.75rem; line-height: 1.5; margin: 0;">Your Ultimate Box Office Analytics Platform | © 2025 CineVerse Analytics | Developed by Mohammad Aakib Bhat</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">↑</button>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load top 10 movies on homepage
+        async function loadTop10() {
+            const container = document.getElementById('top10-carousel');
+            if (!container) return;
+            
+            try {
+                // Show loading skeleton
+                container.innerHTML = `
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                `;
+                
+                const movies = await fetchTop10();
+                console.log('Fetched movies:', movies);
+                
+                if (!movies || movies.length === 0) {
+                    container.innerHTML = `
+                        <div style="text-align: center; padding: 4rem; grid-column: 1 / -1;">
+                            <p style="color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 1rem;">No movies found. Please check if the server is running.</p>
+                            <a href="movies.html" class="btn btn-primary">Explore All Movies</a>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                const currency = getCurrency();
+                container.innerHTML = movies.map((movie, index) => {
+                    const gross = getGrossAmount(movie, currency);
+                    const formattedGross = formatCurrency(gross, currency);
+                    const imdbRating = movie.imdb_rating || 0;
+                    const stars = '⭐'.repeat(Math.floor(imdbRating));
+                    const rank = index + 1;
+                    const rankBadge = rank <= 3 ? `<span class="rank-badge rank-${rank}">${rank === 1 ? '🥇' : rank === 2 ? '🥈' : '🥉'} #${rank}</span>` : '';
+                    
+                    return `
+                        <div class="movie-card fade-in" style="animation-delay: ${index * 0.1}s" onclick="window.location.href='movie.html?id=${movie.id}'">
+                            ${rankBadge}
+                            <img src="${getPosterURL(movie)}" alt="${movie.title}" class="movie-poster" onerror="this.src='https://via.placeholder.com/300x400?text=No+Poster'">
+                            <div class="movie-info">
+                                <h3 class="movie-title">${movie.title}</h3>
+                                <div class="movie-year">${movie.year} • ${movie.category}</div>
+                                ${imdbRating > 0 ? `<div class="movie-rating"><span class="star">${stars}</span> <span>${imdbRating}</span></div>` : ''}
+                                <div class="movie-genre">${getGenresString(movie)}</div>
+                                <div class="movie-gross">${formattedGross}</div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (error) {
+                console.error('Error loading top 10:', error);
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 4rem; grid-column: 1 / -1;">
+                        <p style="color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 1rem;">Error loading movies. Please try again later.</p>
+                        <button class="btn btn-primary" onclick="loadTop10()">Retry</button>
+                    </div>
+                `;
+            }
+        }
+        
+        // Load stats
+        async function loadStats() {
+            try {
+                const movies = await fetchMovies();
+                const moviesCount = movies.length;
+                const moviesCountEl = document.getElementById('movies-count');
+                if (moviesCountEl) {
+                    moviesCountEl.textContent = moviesCount > 0 ? `${moviesCount}+` : '0';
+                }
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTop10();
+            loadStats();
+        });
+        
+        // Reload on currency change
+        window.addEventListener('currencyChanged', loadTop10);
+        
+        // Random movie generator
+        async function showRandomMovie() {
+            try {
+                const movies = await fetchMovies();
+                if (movies.length === 0) {
+                    alert('No movies available');
+                    return;
+                }
+                const randomMovie = movies[Math.floor(Math.random() * movies.length)];
+                window.location.href = `movie.html?id=${randomMovie.id}`;
+            } catch (error) {
+                console.error('Error fetching random movie:', error);
+                alert('Failed to load random movie. Please try again.');
+            }
+        }
+        
+        // Load rotating hero posters
+        async function loadHeroPosters() {
+            try {
+                const movies = await fetchMovies();
+                if (movies.length === 0) return;
+                
+                // Get top 4 movies with valid poster URLs
+                const topMovies = movies
+                    .filter(m => getPosterURL(m) && !getPosterURL(m).includes('placeholder'))
+                    .slice(0, 4);
+                
+                const postersContainer = document.getElementById('hero-posters');
+                if (postersContainer && topMovies.length > 0) {
+                    postersContainer.innerHTML = topMovies.map(movie => 
+                        `<img src="${getPosterURL(movie)}" alt="${movie.title}" class="hero-poster" onerror="this.style.display='none'">`
+                    ).join('');
+                }
+            } catch (error) {
+                console.error('Error loading hero posters:', error);
+            }
+        }
+        
+        // Load hero posters on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHeroPosters();
+        });
+    </script>
+</body>
+</html>

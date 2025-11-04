@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel — CineVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="logo">🎬 CineVerse</div>
+        <ul class="nav-links">
+            <li><a href="index.html">🎬 Home</a></li>
+            <li><a href="movies.html">🎞️ All Movies</a></li>
+            <li><a href="hollywood.html">🌍 Hollywood</a></li>
+            <li><a href="bollywood.html">🎥 Bollywood</a></li>
+            <li><a href="tollywood.html">🎭 Tollywood</a></li>
+            <li><a href="top10.html">🏅 Top 10</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="contact.html">💌 Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="login-section" class="form-container">
+            <div class="admin-header">
+                <h1 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">
+                    🔐 Admin Login
+                </h1>
+                <p style="opacity: 0.8;">Access the admin dashboard</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Login
+                </button>
+            </form>
+            <div id="login-message" style="margin-top: 1.5rem; text-align: center;"></div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section" style="display: none;">
+            <div class="admin-header">
+                <h1 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">
+                    🎛️ Admin Dashboard
+                </h1>
+                <button class="btn btn-secondary" onclick="logout()" style="margin-bottom: 2rem;">
+                    Logout
+                </button>
+            </div>
+
+            <!-- Add Movie Form -->
+            <div class="form-container" style="margin-bottom: 3rem;">
+                <h2 style="font-family: 'Orbitron', sans-serif; margin-bottom: 1.5rem;">➕ Add New Movie</h2>
+                <form id="add-movie-form">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                        <div class="form-group">
+                            <label for="movie-title">Title</label>
+                            <input type="text" id="movie-title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-year">Year</label>
+                            <input type="number" id="movie-year" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-category">Category</label>
+                            <select id="movie-category" required>
+                                <option value="Hollywood">Hollywood</option>
+                                <option value="Bollywood">Bollywood</option>
+                                <option value="Tollywood">Tollywood</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-genre">Genre</label>
+                            <input type="text" id="movie-genre" required placeholder="Action, Drama">
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-director">Director</label>
+                            <input type="text" id="movie-director" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-cast">Cast</label>
+                            <input type="text" id="movie-cast" required placeholder="Actor 1, Actor 2">
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-language">Language</label>
+                            <input type="text" id="movie-language" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-runtime">Runtime</label>
+                            <input type="text" id="movie-runtime" required placeholder="180 min">
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-releaseDate">Release Date</label>
+                            <input type="date" id="movie-releaseDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-domestic">Domestic Gross (₹)</label>
+                            <input type="number" id="movie-domestic" required placeholder="Enter in INR">
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-international">International Gross (₹)</label>
+                            <input type="number" id="movie-international" required placeholder="Enter in INR">
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-worldwideGross">Worldwide Gross (₹)</label>
+                            <input type="number" id="movie-worldwideGross" required placeholder="Enter in INR">
+                        </div>
+                        <div class="form-group">
+                            <label for="movie-imdb">IMDb Rating (0-10)</label>
+                            <input type="number" id="movie-imdb" step="0.1" min="0" max="10" placeholder="7.5">
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="movie-posterURL">Poster URL</label>
+                            <input type="url" id="movie-posterURL" required>
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="movie-trailerURL">Trailer URL (YouTube Embed)</label>
+                            <input type="url" id="movie-trailerURL" placeholder="https://www.youtube.com/embed/...">
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="movie-description">Description</label>
+                            <textarea id="movie-description" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Add Movie
+                    </button>
+                </form>
+                <div id="add-movie-message" style="margin-top: 1.5rem; text-align: center;"></div>
+            </div>
+
+            <!-- Movies List -->
+            <div style="margin-bottom: 3rem;">
+                <h2 style="font-family: 'Orbitron', sans-serif; margin-bottom: 1.5rem;">📋 All Movies</h2>
+                <div id="admin-movies-list" class="movies-list-admin">
+                    <!-- Movies will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Contact Messages -->
+            <div>
+                <h2 style="font-family: 'Orbitron', sans-serif; margin-bottom: 1.5rem;">💌 Contact Messages</h2>
+                <div id="contact-messages" style="display: grid; gap: 1rem;">
+                    <!-- Messages will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 style="margin-bottom: 1rem;">🎬 CineVerse</h3>
+            <p style="opacity: 0.7; margin-bottom: 1rem;">Global Cinema Analytics Platform</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="YouTube">📺</a>
+            </div>
+            <div class="footer-credits">
+                <p>Designed & Developed by Mohammad Aakib Bhat | Web Technology Major Project | © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
+

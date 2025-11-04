@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollywood Movies — CineVerse Analytics</title>
+    <meta name="description" content="Browse Tollywood movies with comprehensive box office data, ratings, and statistics">
+    <meta name="keywords" content="tollywood movies, telugu films, tollywood box office, tollywood cinema, tollywood statistics">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cineverse.com/tollywood.html">
+    <meta property="og:title" content="Tollywood Movies — CineVerse Analytics">
+    <meta property="og:description" content="Browse Tollywood movies with comprehensive box office data, ratings, and statistics">
+    <meta property="og:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tollywood Movies — CineVerse Analytics">
+    <meta name="twitter:description" content="Browse Tollywood movies with comprehensive box office data, ratings, and statistics">
+    <meta name="twitter:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="logo">🎬 CineVerse</div>
+        <ul class="nav-links">
+            <li><a href="index.html">🎬 Home</a></li>
+            <li><a href="movies.html">🎞️ All Movies</a></li>
+            <li><a href="hollywood.html">🌍 Hollywood</a></li>
+            <li><a href="bollywood.html">🎥 Bollywood</a></li>
+            <li><a href="tollywood.html">🎭 Tollywood</a></li>
+            <li><a href="top10.html">🏅 Top 10</a></li>
+            <li><a href="analytics.html">📊 Analytics</a></li>
+            <li><a href="compare.html">⚖️ Compare</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="contact.html">💌 Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="category-banner tollywood-banner">
+        <h1>🎭 Tollywood Epics</h1>
+    </section>
+
+    <section style="padding: 3rem 2rem;">
+        <div class="filters-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="🔍 Search Tollywood movies...">
+            </div>
+            <select class="filter-select" id="sort-select">
+                <option value="gross">Sort by: Gross (High to Low)</option>
+                <option value="year">Sort by: Year (Newest)</option>
+                <option value="title">Sort by: Title (A-Z)</option>
+                <option value="rating">Sort by: IMDb Rating</option>
+            </select>
+            <div class="currency-toggle">
+                <button class="currency-btn active" data-currency="INR">₹ INR</button>
+                <button class="currency-btn" data-currency="USD">$ USD</button>
+            </div>
+        </div>
+
+        <div id="movies-container" class="movies-grid">
+            <!-- Movies will be loaded here -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p style="font-size: 0.75rem; line-height: 1.5; margin: 0;">Your Ultimate Box Office Analytics Platform | © 2025 CineVerse Analytics | Developed by Mohammad Aakib Bhat</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/movies.js"></script>
+    <script>
+        // Filter only Tollywood movies
+        const originalLoadMovies = window.loadMovies;
+        window.loadMovies = async function() {
+            const movies = await fetchMoviesByCategory('Tollywood');
+            allMovies = movies;
+            displayMovies(movies);
+            setupFilters(movies);
+        };
+        loadMovies();
+    </script>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">↑</button>
+</body>
+</html>

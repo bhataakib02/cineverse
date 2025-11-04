@@ -1,0 +1,291 @@
+[
+  {
+    "id": 1,
+    "title": "Avatar",
+    "year": 2009,
+    "category": "Hollywood",
+    "director": "James Cameron",
+    "cast": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2009-12-18",
+    "runtime": "162 min",
+    "worldwide_gross_usd": 2923710708,
+    "worldwide_gross_inr": 242667988764,
+    "domestic_gross_usd": 785221649,
+    "domestic_gross_inr": 65173396867,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+    "trailer_url": "https://www.youtube.com/embed/5PSNL1qE6VY",
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0499549/",
+      "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
+      "https://www.imdb.com/title/tt0499549/"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "category": "Hollywood",
+    "director": "James Cameron",
+    "cast": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2022-12-16",
+    "runtime": "192 min",
+    "worldwide_gross_usd": 2317405329,
+    "worldwide_gross_inr": 192344642307,
+    "domestic_gross_usd": 684075767,
+    "domestic_gross_inr": 56778288661,
+    "imdb_rating": 7.6,
+    "poster_url": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    "trailer_url": "https://www.youtube.com/embed/d9MyW72ELq0",
+    "description": "Set more than a decade after the events of the first film, Avatar: The Way of Water begins to tell the story of the Sully family.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt1630029/",
+      "https://en.wikipedia.org/wiki/Avatar:_The_Way_of_Water",
+      "https://www.imdb.com/title/tt1630029/"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "category": "Hollywood",
+    "director": "Anthony Russo, Joe Russo",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "language": "English",
+    "release_date": "2019-04-26",
+    "runtime": "181 min",
+    "worldwide_gross_usd": 2799439099,
+    "worldwide_gross_inr": 232353445217,
+    "domestic_gross_usd": 858373000,
+    "domestic_gross_inr": 71244959000,
+    "imdb_rating": 8.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "trailer_url": "https://www.youtube.com/embed/TcMBFSGVi1c",
+    "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more to undo Thanos' actions and restore order.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4154796/",
+      "https://en.wikipedia.org/wiki/Avengers:_Endgame",
+      "https://www.imdb.com/title/tt4154796/"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Titanic",
+    "year": 1997,
+    "category": "Hollywood",
+    "director": "James Cameron",
+    "cast": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "language": "English",
+    "release_date": "1997-12-19",
+    "runtime": "194 min",
+    "worldwide_gross_usd": 2201647264,
+    "worldwide_gross_inr": 182736722912,
+    "domestic_gross_usd": 659363944,
+    "domestic_gross_inr": 54727207352,
+    "imdb_rating": 7.9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/CHekzSiZjrY",
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0120338/",
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+      "https://www.imdb.com/title/tt0120338/"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Star Wars: Episode VII - The Force Awakens",
+    "year": 2015,
+    "category": "Hollywood",
+    "director": "J.J. Abrams",
+    "cast": "Harrison Ford, Mark Hamill, Carrie Fisher, Adam Driver",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2015-12-18",
+    "runtime": "138 min",
+    "worldwide_gross_usd": 2071310219,
+    "worldwide_gross_inr": 171918748177,
+    "domestic_gross_usd": 936662225,
+    "domestic_gross_inr": 77742964675,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/wqnLdwVXoBjKibPRR5BZdy7a95m.jpg",
+    "trailer_url": "https://www.youtube.com/embed/sGbxmsDFVnE",
+    "description": "Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2488496/",
+      "https://en.wikipedia.org/wiki/Star_Wars:_The_Force_Awakens",
+      "https://www.imdb.com/title/tt2488496/"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "category": "Hollywood",
+    "director": "Anthony Russo, Joe Russo",
+    "cast": "Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Josh Brolin",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2018-04-27",
+    "runtime": "149 min",
+    "worldwide_gross_usd": 2052415039,
+    "worldwide_gross_inr": 170350448237,
+    "domestic_gross_usd": 678815482,
+    "domestic_gross_inr": 56341685006,
+    "imdb_rating": 8.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "trailer_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+    "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4154756/",
+      "https://en.wikipedia.org/wiki/Avengers:_Infinity_War",
+      "https://www.imdb.com/title/tt4154756/"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "category": "Hollywood",
+    "director": "Jon Watts",
+    "cast": "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "language": "English",
+    "release_date": "2021-12-17",
+    "runtime": "148 min",
+    "worldwide_gross_usd": 1921847111,
+    "worldwide_gross_inr": 159513310213,
+    "domestic_gross_usd": 814115070,
+    "domestic_gross_inr": 67571550810,
+    "imdb_rating": 8.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "trailer_url": "https://www.youtube.com/embed/JfVOs4VSpmA",
+    "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt10872600/",
+      "https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home",
+      "https://www.imdb.com/title/tt10872600/"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Jurassic World",
+    "year": 2015,
+    "category": "Hollywood",
+    "director": "Colin Trevorrow",
+    "cast": "Chris Pratt, Bryce Dallas Howard, Vincent D'Onofrio",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2015-06-12",
+    "runtime": "124 min",
+    "worldwide_gross_usd": 1671713208,
+    "worldwide_gross_inr": 138752196264,
+    "domestic_gross_usd": 652270625,
+    "domestic_gross_inr": 54138461875,
+    "imdb_rating": 6.9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/rhr4y79GpxQFk1a7NVKa0Y2r1tP.jpg",
+    "trailer_url": "https://www.youtube.com/embed/RFinNxS5KN4",
+    "description": "A new theme park is built on the original site of Jurassic Park. Everything is going well until the park's newest attraction—a genetically modified giant stealth killing machine—escapes containment.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0369610/",
+      "https://en.wikipedia.org/wiki/Jurassic_World",
+      "https://www.imdb.com/title/tt0369610/"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "The Lion King",
+    "year": 2019,
+    "category": "Hollywood",
+    "director": "Jon Favreau",
+    "cast": "Donald Glover, Beyoncé, James Earl Jones, Chiwetel Ejiofor",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Drama"
+    ],
+    "language": "English",
+    "release_date": "2019-07-19",
+    "runtime": "118 min",
+    "worldwide_gross_usd": 1656943394,
+    "worldwide_gross_inr": 137526301702,
+    "domestic_gross_usd": 543638043,
+    "domestic_gross_inr": 45121957569,
+    "imdb_rating": 6.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg",
+    "trailer_url": "https://www.youtube.com/embed/7TavVZMewpY",
+    "description": "After the murder of his father, a young lion prince must flee his kingdom only to learn the true meaning of responsibility and bravery.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt6105098/",
+      "https://en.wikipedia.org/wiki/The_Lion_King_(2019_film)",
+      "https://www.imdb.com/title/tt6105098/"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "The Avengers",
+    "year": 2012,
+    "category": "Hollywood",
+    "director": "Joss Whedon",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2012-05-04",
+    "runtime": "143 min",
+    "worldwide_gross_usd": 1519557910,
+    "worldwide_gross_inr": 126123306530,
+    "domestic_gross_usd": 623357910,
+    "domestic_gross_inr": 51738706530,
+    "imdb_rating": 8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "trailer_url": "https://www.youtube.com/embed/eOrNdBpGMv8",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0848228/",
+      "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)",
+      "https://www.imdb.com/title/tt0848228/"
+    ]
+  }
+]

@@ -1,0 +1,1441 @@
+[
+  {
+    "id": 1,
+    "title": "Avatar",
+    "year": 2009,
+    "category": "Hollywood",
+    "director": "James Cameron",
+    "cast": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2009-12-18",
+    "runtime": "162 min",
+    "worldwide_gross_usd": 2923710708,
+    "worldwide_gross_inr": 242667988764,
+    "domestic_gross_usd": 785221649,
+    "domestic_gross_inr": 65173396867,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+    "trailer_url": "https://www.youtube.com/embed/5PSNL1qE6VY",
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0499549/",
+      "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
+      "https://www.imdb.com/title/tt0499549/"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "category": "Hollywood",
+    "director": "James Cameron",
+    "cast": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2022-12-16",
+    "runtime": "192 min",
+    "worldwide_gross_usd": 2317405329,
+    "worldwide_gross_inr": 192344642307,
+    "domestic_gross_usd": 684075767,
+    "domestic_gross_inr": 56778288661,
+    "imdb_rating": 7.6,
+    "poster_url": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    "trailer_url": "https://www.youtube.com/embed/d9MyW72ELq0",
+    "description": "Set more than a decade after the events of the first film, Avatar: The Way of Water begins to tell the story of the Sully family.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt1630029/",
+      "https://en.wikipedia.org/wiki/Avatar:_The_Way_of_Water",
+      "https://www.imdb.com/title/tt1630029/"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "category": "Hollywood",
+    "director": "Anthony Russo, Joe Russo",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "language": "English",
+    "release_date": "2019-04-26",
+    "runtime": "181 min",
+    "worldwide_gross_usd": 2799439099,
+    "worldwide_gross_inr": 232353445217,
+    "domestic_gross_usd": 858373000,
+    "domestic_gross_inr": 71244959000,
+    "imdb_rating": 8.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "trailer_url": "https://www.youtube.com/embed/TcMBFSGVi1c",
+    "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more to undo Thanos' actions and restore order.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4154796/",
+      "https://en.wikipedia.org/wiki/Avengers:_Endgame",
+      "https://www.imdb.com/title/tt4154796/"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Titanic",
+    "year": 1997,
+    "category": "Hollywood",
+    "director": "James Cameron",
+    "cast": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "language": "English",
+    "release_date": "1997-12-19",
+    "runtime": "194 min",
+    "worldwide_gross_usd": 2201647264,
+    "worldwide_gross_inr": 182736722912,
+    "domestic_gross_usd": 659363944,
+    "domestic_gross_inr": 54727207352,
+    "imdb_rating": 7.9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/CHekzSiZjrY",
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0120338/",
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+      "https://www.imdb.com/title/tt0120338/"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Star Wars: Episode VII - The Force Awakens",
+    "year": 2015,
+    "category": "Hollywood",
+    "director": "J.J. Abrams",
+    "cast": "Harrison Ford, Mark Hamill, Carrie Fisher, Adam Driver",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2015-12-18",
+    "runtime": "138 min",
+    "worldwide_gross_usd": 2071310219,
+    "worldwide_gross_inr": 171918748177,
+    "domestic_gross_usd": 936662225,
+    "domestic_gross_inr": 77742964675,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/wqnLdwVXoBjKibPRR5BZdy7a95m.jpg",
+    "trailer_url": "https://www.youtube.com/embed/sGbxmsDFVnE",
+    "description": "Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2488496/",
+      "https://en.wikipedia.org/wiki/Star_Wars:_The_Force_Awakens",
+      "https://www.imdb.com/title/tt2488496/"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "category": "Hollywood",
+    "director": "Anthony Russo, Joe Russo",
+    "cast": "Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Josh Brolin",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2018-04-27",
+    "runtime": "149 min",
+    "worldwide_gross_usd": 2052415039,
+    "worldwide_gross_inr": 170350448237,
+    "domestic_gross_usd": 678815482,
+    "domestic_gross_inr": 56341685006,
+    "imdb_rating": 8.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "trailer_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+    "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4154756/",
+      "https://en.wikipedia.org/wiki/Avengers:_Infinity_War",
+      "https://www.imdb.com/title/tt4154756/"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "category": "Hollywood",
+    "director": "Jon Watts",
+    "cast": "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "language": "English",
+    "release_date": "2021-12-17",
+    "runtime": "148 min",
+    "worldwide_gross_usd": 1921847111,
+    "worldwide_gross_inr": 159513310213,
+    "domestic_gross_usd": 814115070,
+    "domestic_gross_inr": 67571550810,
+    "imdb_rating": 8.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "trailer_url": "https://www.youtube.com/embed/JfVOs4VSpmA",
+    "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt10872600/",
+      "https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home",
+      "https://www.imdb.com/title/tt10872600/"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Jurassic World",
+    "year": 2015,
+    "category": "Hollywood",
+    "director": "Colin Trevorrow",
+    "cast": "Chris Pratt, Bryce Dallas Howard, Vincent D'Onofrio",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2015-06-12",
+    "runtime": "124 min",
+    "worldwide_gross_usd": 1671713208,
+    "worldwide_gross_inr": 138752196264,
+    "domestic_gross_usd": 652270625,
+    "domestic_gross_inr": 54138461875,
+    "imdb_rating": 6.9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/rhr4y79GpxQFk1a7NVKa0Y2r1tP.jpg",
+    "trailer_url": "https://www.youtube.com/embed/RFinNxS5KN4",
+    "description": "A new theme park is built on the original site of Jurassic Park. Everything is going well until the park's newest attraction—a genetically modified giant stealth killing machine—escapes containment.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0369610/",
+      "https://en.wikipedia.org/wiki/Jurassic_World",
+      "https://www.imdb.com/title/tt0369610/"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "The Lion King",
+    "year": 2019,
+    "category": "Hollywood",
+    "director": "Jon Favreau",
+    "cast": "Donald Glover, Beyoncé, James Earl Jones, Chiwetel Ejiofor",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Drama"
+    ],
+    "language": "English",
+    "release_date": "2019-07-19",
+    "runtime": "118 min",
+    "worldwide_gross_usd": 1656943394,
+    "worldwide_gross_inr": 137526301702,
+    "domestic_gross_usd": 543638043,
+    "domestic_gross_inr": 45121957569,
+    "imdb_rating": 6.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg",
+    "trailer_url": "https://www.youtube.com/embed/7TavVZMewpY",
+    "description": "After the murder of his father, a young lion prince must flee his kingdom only to learn the true meaning of responsibility and bravery.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt6105098/",
+      "https://en.wikipedia.org/wiki/The_Lion_King_(2019_film)",
+      "https://www.imdb.com/title/tt6105098/"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "The Avengers",
+    "year": 2012,
+    "category": "Hollywood",
+    "director": "Joss Whedon",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2012-05-04",
+    "runtime": "143 min",
+    "worldwide_gross_usd": 1519557910,
+    "worldwide_gross_inr": 126123306530,
+    "domestic_gross_usd": 623357910,
+    "domestic_gross_inr": 51738706530,
+    "imdb_rating": 8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "trailer_url": "https://www.youtube.com/embed/eOrNdBpGMv8",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt0848228/",
+      "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)",
+      "https://www.imdb.com/title/tt0848228/"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Furious 7",
+    "year": 2015,
+    "category": "Hollywood",
+    "director": "James Wan",
+    "cast": "Vin Diesel, Paul Walker, Dwayne Johnson, Michelle Rodriguez",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "language": "English",
+    "release_date": "2015-04-03",
+    "runtime": "137 min",
+    "worldwide_gross_usd": 1516045911,
+    "worldwide_gross_inr": 125831810613,
+    "domestic_gross_usd": 353007020,
+    "domestic_gross_inr": 29299582660,
+    "imdb_rating": 7.1,
+    "poster_url": "https://image.tmdb.org/t/p/w500/dCgm7ef0iKhZy5N1FWtXJ5VuvjY.jpg",
+    "trailer_url": "https://www.youtube.com/embed/Skpu5HaVkOc",
+    "description": "Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2820852/",
+      "https://en.wikipedia.org/wiki/Furious_7",
+      "https://www.imdb.com/title/tt2820852/"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Frozen II",
+    "year": 2019,
+    "category": "Hollywood",
+    "director": "Chris Buck, Jennifer Lee",
+    "cast": "Idina Menzel, Kristen Bell, Jonathan Groff, Josh Gad",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "language": "English",
+    "release_date": "2019-11-22",
+    "runtime": "103 min",
+    "worldwide_gross_usd": 1450026933,
+    "worldwide_gross_inr": 120352235439,
+    "domestic_gross_usd": 477373578,
+    "domestic_gross_inr": 39622006974,
+    "imdb_rating": 6.9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/mINJaaGMtKXd4jCZNZu31g5U8ke.jpg",
+    "trailer_url": "https://www.youtube.com/embed/Zi4LMpSDccc",
+    "description": "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4520988/",
+      "https://en.wikipedia.org/wiki/Frozen_II",
+      "https://www.imdb.com/title/tt4520988/"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Avengers: Age of Ultron",
+    "year": 2015,
+    "category": "Hollywood",
+    "director": "Joss Whedon",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2015-05-01",
+    "runtime": "141 min",
+    "worldwide_gross_usd": 1405403694,
+    "worldwide_gross_inr": 116648506602,
+    "domestic_gross_usd": 459005868,
+    "domestic_gross_inr": 38097487044,
+    "imdb_rating": 7.3,
+    "poster_url": "https://image.tmdb.org/t/p/w500/t90Y3G8UGQp0f0DrP60wRu9gfrH.jpg",
+    "trailer_url": "https://www.youtube.com/embed/tmeOjFno6Do",
+    "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program, things go awry.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2395427/",
+      "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+      "https://www.imdb.com/title/tt2395427/"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Black Panther",
+    "year": 2018,
+    "category": "Hollywood",
+    "director": "Ryan Coogler",
+    "cast": "Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2018-02-16",
+    "runtime": "134 min",
+    "worldwide_gross_usd": 1346913161,
+    "worldwide_gross_inr": 111793792363,
+    "domestic_gross_usd": 700426566,
+    "domestic_gross_inr": 58135404978,
+    "imdb_rating": 7.3,
+    "poster_url": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "trailer_url": "https://www.youtube.com/embed/xjDjIWPwcPU",
+    "description": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt1825683/",
+      "https://en.wikipedia.org/wiki/Black_Panther_(film)",
+      "https://www.imdb.com/title/tt1825683/"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "year": 2011,
+    "category": "Hollywood",
+    "director": "David Yates",
+    "cast": "Daniel Radcliffe, Emma Watson, Rupert Grint, Ralph Fiennes",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "language": "English",
+    "release_date": "2011-07-15",
+    "runtime": "130 min",
+    "worldwide_gross_usd": 1342025430,
+    "worldwide_gross_inr": 111388110690,
+    "domestic_gross_usd": 381011219,
+    "domestic_gross_inr": 31623931177,
+    "imdb_rating": 8.1,
+    "poster_url": "https://image.tmdb.org/t/p/w500/c54HpQmuwXajbP1SwArNxmqO9b9.jpg",
+    "trailer_url": "https://www.youtube.com/embed/5NYt1qirBWg",
+    "description": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt1201607/",
+      "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2",
+      "https://www.imdb.com/title/tt1201607/"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Star Wars: The Last Jedi",
+    "year": 2017,
+    "category": "Hollywood",
+    "director": "Rian Johnson",
+    "cast": "Mark Hamill, Carrie Fisher, Adam Driver, Daisy Ridley",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "language": "English",
+    "release_date": "2017-12-15",
+    "runtime": "152 min",
+    "worldwide_gross_usd": 1332539889,
+    "worldwide_gross_inr": 110600810787,
+    "domestic_gross_usd": 620181382,
+    "domestic_gross_inr": 51475054706,
+    "imdb_rating": 6.9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OMWrH.jpg",
+    "trailer_url": "https://www.youtube.com/embed/Q0CbN8sfihY",
+    "description": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2527336/",
+      "https://en.wikipedia.org/wiki/Star_Wars:_The_Last_Jedi",
+      "https://www.imdb.com/title/tt2527336/"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Jurassic World: Fallen Kingdom",
+    "year": 2018,
+    "category": "Hollywood",
+    "director": "J.A. Bayona",
+    "cast": "Chris Pratt, Bryce Dallas Howard, Rafe Spall, Justice Smith",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "language": "English",
+    "release_date": "2018-06-22",
+    "runtime": "128 min",
+    "worldwide_gross_usd": 1309484461,
+    "worldwide_gross_inr": 108687210263,
+    "domestic_gross_usd": 417719760,
+    "domestic_gross_inr": 34670740080,
+    "imdb_rating": 6.1,
+    "poster_url": "https://image.tmdb.org/t/p/w500/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vn9mMeWcgoM",
+    "description": "When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4881806/",
+      "https://en.wikipedia.org/wiki/Jurassic_World:_Fallen_Kingdom",
+      "https://www.imdb.com/title/tt4881806/"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Frozen",
+    "year": 2013,
+    "category": "Hollywood",
+    "director": "Chris Buck, Jennifer Lee",
+    "cast": "Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "language": "English",
+    "release_date": "2013-11-27",
+    "runtime": "102 min",
+    "worldwide_gross_usd": 1280802282,
+    "worldwide_gross_inr": 106306589406,
+    "domestic_gross_usd": 400738009,
+    "domestic_gross_inr": 33261254747,
+    "imdb_rating": 7.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg",
+    "trailer_url": "https://www.youtube.com/embed/TbQm5doF_Uc",
+    "description": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2294629/",
+      "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+      "https://www.imdb.com/title/tt2294629/"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Beauty and the Beast",
+    "year": 2017,
+    "category": "Hollywood",
+    "director": "Bill Condon",
+    "cast": "Emma Watson, Dan Stevens, Luke Evans, Kevin Kline",
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Musical"
+    ],
+    "language": "English",
+    "release_date": "2017-03-17",
+    "runtime": "129 min",
+    "worldwide_gross_usd": 1263521126,
+    "worldwide_gross_inr": 104872253458,
+    "domestic_gross_usd": 504014165,
+    "domestic_gross_inr": 41833175695,
+    "imdb_rating": 7.1,
+    "poster_url": "https://image.tmdb.org/t/p/w500/hKegSKIDep2ewJWPUQD7u0KqFIp.jpg",
+    "trailer_url": "https://www.youtube.com/embed/e3Nl_TCQXuw",
+    "description": "A selfish Prince is cursed to become a monster for the rest of his life, unless he learns to fall in love.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2771200/",
+      "https://en.wikipedia.org/wiki/Beauty_and_the_Beast_(2017_film)",
+      "https://www.imdb.com/title/tt2771200/"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Incredibles 2",
+    "year": 2018,
+    "category": "Hollywood",
+    "director": "Brad Bird",
+    "cast": "Craig T. Nelson, Holly Hunter, Sarah Vowell, Huck Milner",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "language": "English",
+    "release_date": "2018-06-15",
+    "runtime": "118 min",
+    "worldwide_gross_usd": 1242805359,
+    "worldwide_gross_inr": 103152844797,
+    "domestic_gross_usd": 608581744,
+    "domestic_gross_inr": 50512284752,
+    "imdb_rating": 7.6,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9lFKBtaVIhP7E2Pk0IY1CwTKTMf.jpg",
+    "trailer_url": "https://www.youtube.com/embed/ZJDMWVZta3M",
+    "description": "The Incredibles family takes on a new mission which involves a change in family roles: Bob Parr must manage the house while his wife Helen goes out to save the world.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt3606756/",
+      "https://en.wikipedia.org/wiki/Incredibles_2",
+      "https://www.imdb.com/title/tt3606756/"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Dangal",
+    "year": 2016,
+    "category": "Bollywood",
+    "director": "Nitesh Tiwari",
+    "cast": "Aamir Khan, Sakshi Tanwar, Fatima Sana Shaikh, Sanya Malhotra",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Sport"
+    ],
+    "language": "Hindi",
+    "release_date": "2016-12-23",
+    "runtime": "161 min",
+    "worldwide_gross_usd": 63600000,
+    "worldwide_gross_inr": 5278800000,
+    "domestic_gross_usd": 38000000,
+    "domestic_gross_inr": 3154000000,
+    "imdb_rating": 8.3,
+    "poster_url": "https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg",
+    "trailer_url": "https://www.youtube.com/embed/x_7YlGv9u1g",
+    "description": "Former wrestler Mahavir Singh Phogat trains his daughters Geeta and Babita to become world-class wrestlers.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt5074352/",
+      "https://en.wikipedia.org/wiki/Dangal_(film)",
+      "https://www.imdb.com/title/tt5074352/"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "PK",
+    "year": 2014,
+    "category": "Bollywood",
+    "director": "Rajkumar Hirani",
+    "cast": "Aamir Khan, Anushka Sharma, Sanjay Dutt, Sushant Singh Rajput",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "language": "Hindi",
+    "release_date": "2014-12-19",
+    "runtime": "153 min",
+    "worldwide_gross_usd": 120000000,
+    "worldwide_gross_inr": 9960000000,
+    "domestic_gross_usd": 72000000,
+    "domestic_gross_inr": 5976000000,
+    "imdb_rating": 8.1,
+    "poster_url": "https://image.tmdb.org/t/p/w500/qJjs9pM8xWbKnabFCqJmPqZ4qGE.jpg",
+    "trailer_url": "https://www.youtube.com/embed/SOXWc32k354",
+    "description": "An alien on Earth loses the only device he can use to communicate with his spaceship.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2338151/",
+      "https://en.wikipedia.org/wiki/PK_(film)",
+      "https://www.imdb.com/title/tt2338151/"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "3 Idiots",
+    "year": 2009,
+    "category": "Bollywood",
+    "director": "Rajkumar Hirani",
+    "cast": "Aamir Khan, Madhavan, Sharman Joshi, Kareena Kapoor",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "language": "Hindi",
+    "release_date": "2009-12-25",
+    "runtime": "170 min",
+    "worldwide_gross_usd": 65000000,
+    "worldwide_gross_inr": 5395000000,
+    "domestic_gross_usd": 40000000,
+    "domestic_gross_inr": 3320000000,
+    "imdb_rating": 8.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/66A9Mqo65mJn1h6ZybJ4fO5kz1F.jpg",
+    "trailer_url": "https://www.youtube.com/embed/K0eDlFX9GMc",
+    "description": "In the tradition of 'Educating Rita' and 'Dead Poets Society', this coming-of-age film follows three friends who go to engineering college.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt1187043/",
+      "https://en.wikipedia.org/wiki/3_Idiots",
+      "https://www.imdb.com/title/tt1187043/"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Sultan",
+    "year": 2016,
+    "category": "Bollywood",
+    "director": "Ali Abbas Zafar",
+    "cast": "Salman Khan, Anushka Sharma, Randeep Hooda, Amit Sadh",
+    "genres": [
+      "Action",
+      "Drama",
+      "Sport"
+    ],
+    "language": "Hindi",
+    "release_date": "2016-07-06",
+    "runtime": "170 min",
+    "worldwide_gross_usd": 90000000,
+    "worldwide_gross_inr": 7470000000,
+    "domestic_gross_usd": 54000000,
+    "domestic_gross_inr": 4482000000,
+    "imdb_rating": 7,
+    "poster_url": "https://image.tmdb.org/t/p/w500/1XAvMNDQBnH2EElXmnxrNMjr6xV.jpg",
+    "trailer_url": "https://www.youtube.com/embed/wPxqcq6Byq0",
+    "description": "Sultan is a story of a wrestler whose journey takes him from being a celebrated champion to a forgotten name.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt5166334/",
+      "https://en.wikipedia.org/wiki/Sultan_(2016_film)",
+      "https://www.imdb.com/title/tt5166334/"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Bajrangi Bhaijaan",
+    "year": 2015,
+    "category": "Bollywood",
+    "director": "Kabir Khan",
+    "cast": "Salman Khan, Kareena Kapoor, Nawazuddin Siddiqui, Harshaali Malhotra",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ],
+    "language": "Hindi",
+    "release_date": "2015-07-17",
+    "runtime": "163 min",
+    "worldwide_gross_usd": 96000000,
+    "worldwide_gross_inr": 7968000000,
+    "domestic_gross_usd": 58000000,
+    "domestic_gross_inr": 4814000000,
+    "imdb_rating": 8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt3863552/",
+      "https://en.wikipedia.org/wiki/Bajrangi_Bhaijaan",
+      "https://www.imdb.com/title/tt3863552/"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Tiger Zinda Hai",
+    "year": 2017,
+    "category": "Bollywood",
+    "director": "Ali Abbas Zafar",
+    "cast": "Salman Khan, Katrina Kaif, Angad Bedi, Sajjad Delafrooz",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "language": "Hindi",
+    "release_date": "2017-12-22",
+    "runtime": "161 min",
+    "worldwide_gross_usd": 85000000,
+    "worldwide_gross_inr": 7055000000,
+    "domestic_gross_usd": 51000000,
+    "domestic_gross_inr": 4233000000,
+    "imdb_rating": 6.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/5FD8L3VhJ2qQ6Q6Q6Q6Q6Q6Q6Q.jpg",
+    "trailer_url": "https://www.youtube.com/embed/erL3Kqj4a5k",
+    "description": "A RAW agent and an ISI agent must work together to save a group of nurses held hostage in Iraq.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt5956100/",
+      "https://en.wikipedia.org/wiki/Tiger_Zinda_Hai",
+      "https://www.imdb.com/title/tt5956100/"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Padmaavat",
+    "year": 2018,
+    "category": "Bollywood",
+    "director": "Sanjay Leela Bhansali",
+    "cast": "Deepika Padukone, Ranveer Singh, Shahid Kapoor, Aditi Rao Hydari",
+    "genres": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "release_date": "2018-01-25",
+    "runtime": "164 min",
+    "worldwide_gross_usd": 80000000,
+    "worldwide_gross_inr": 6640000000,
+    "domestic_gross_usd": 48000000,
+    "domestic_gross_inr": 3984000000,
+    "imdb_rating": 7,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/X_7_BaLx8cY",
+    "description": "Set in medieval Rajasthan, Queen Padmavati is married to a noble king and they live in a prosperous fortress with their subjects until an ambitious Sultan hears of Padmavati's beauty.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt6136774/",
+      "https://en.wikipedia.org/wiki/Padmaavat",
+      "https://www.imdb.com/title/tt6136774/"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "War",
+    "year": 2019,
+    "category": "Bollywood",
+    "director": "Siddharth Anand",
+    "cast": "Hrithik Roshan, Tiger Shroff, Vaani Kapoor, Ashutosh Rana",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "language": "Hindi",
+    "release_date": "2019-10-02",
+    "runtime": "154 min",
+    "worldwide_gross_usd": 75000000,
+    "worldwide_gross_inr": 6225000000,
+    "domestic_gross_usd": 45000000,
+    "domestic_gross_inr": 3735000000,
+    "imdb_rating": 5.5,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/tQ0mzXRk-oM",
+    "description": "An Indian soldier is assigned to eliminate his former mentor who has gone rogue.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt7430722/",
+      "https://en.wikipedia.org/wiki/War_(2019_film)",
+      "https://www.imdb.com/title/tt7430722/"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Sanju",
+    "year": 2018,
+    "category": "Bollywood",
+    "director": "Rajkumar Hirani",
+    "cast": "Ranbir Kapoor, Paresh Rawal, Vicky Kaushal, Manisha Koirala",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "language": "Hindi",
+    "release_date": "2018-06-29",
+    "runtime": "155 min",
+    "worldwide_gross_usd": 88000000,
+    "worldwide_gross_inr": 7304000000,
+    "domestic_gross_usd": 53000000,
+    "domestic_gross_inr": 4399000000,
+    "imdb_rating": 7.6,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/1MD4k6Fsqao",
+    "description": "A biopic of Sanjay Dutt, tracing his journey from his early days in Bollywood to his arrest and eventual release.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt6452574/",
+      "https://en.wikipedia.org/wiki/Sanju",
+      "https://www.imdb.com/title/tt6452574/"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Tiger 3",
+    "year": 2023,
+    "category": "Bollywood",
+    "director": "Maneesh Sharma",
+    "cast": "Salman Khan, Katrina Kaif, Emraan Hashmi",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "language": "Hindi",
+    "release_date": "2023-11-12",
+    "runtime": "165 min",
+    "worldwide_gross_usd": 95000000,
+    "worldwide_gross_inr": 7885000000,
+    "domestic_gross_usd": 57000000,
+    "domestic_gross_inr": 4731000000,
+    "imdb_rating": 5.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vn9mMeWcgoM",
+    "description": "Tiger and Zoya are back. This time, it's personal.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Tiger_3",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "RRR",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "S.S. Rajamouli",
+    "cast": "Ram Charan, Jr NTR, Alia Bhatt, Ajay Devgn",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-03-25",
+    "runtime": "187 min",
+    "worldwide_gross_usd": 170000000,
+    "worldwide_gross_inr": 14110000000,
+    "domestic_gross_usd": 102000000,
+    "domestic_gross_inr": 8466000000,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/g4yJTzMtOBUTAR2Qnmj8TYIcFVq.jpg",
+    "trailer_url": "https://www.youtube.com/embed/NgBoMJy386M",
+    "description": "Two revolutionaries fight against British colonial rule in 1920s India.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt8178634/",
+      "https://en.wikipedia.org/wiki/RRR_(film)",
+      "https://www.imdb.com/title/tt8178634/"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Baahubali 2: The Conclusion",
+    "year": 2017,
+    "category": "Tollywood",
+    "director": "S.S. Rajamouli",
+    "cast": "Prabhas, Rana Daggubati, Anushka Shetty, Tamannaah",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ],
+    "language": "Telugu",
+    "release_date": "2017-04-28",
+    "runtime": "167 min",
+    "worldwide_gross_usd": 260000000,
+    "worldwide_gross_inr": 21580000000,
+    "domestic_gross_usd": 156000000,
+    "domestic_gross_inr": 12948000000,
+    "imdb_rating": 8.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/yL15WVxFw1X4uWv4bdS8fPAS2y7.jpg",
+    "trailer_url": "https://www.youtube.com/embed/qD-6d8Wo3do",
+    "description": "When Shiva learns that he is the son of Bahubali, he begins to look for answers.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt4849438/",
+      "https://en.wikipedia.org/wiki/Baahubali_2:_The_Conclusion",
+      "https://www.imdb.com/title/tt4849438/"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Baahubali: The Beginning",
+    "year": 2015,
+    "category": "Tollywood",
+    "director": "S.S. Rajamouli",
+    "cast": "Prabhas, Rana Daggubati, Anushka Shetty, Tamannaah",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ],
+    "language": "Telugu",
+    "release_date": "2015-07-10",
+    "runtime": "158 min",
+    "worldwide_gross_usd": 100000000,
+    "worldwide_gross_inr": 8300000000,
+    "domestic_gross_usd": 60000000,
+    "domestic_gross_inr": 4980000000,
+    "imdb_rating": 8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/yL15WVxFw1X4uWv4bdS8fPAS2y7.jpg",
+    "trailer_url": "https://www.youtube.com/embed/3NQRhE772b0",
+    "description": "In ancient India, an adventurous and daring man becomes involved in a decades-old feud between two warring peoples.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt2631186/",
+      "https://en.wikipedia.org/wiki/Baahubali:_The_Beginning",
+      "https://www.imdb.com/title/tt2631186/"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "KGF: Chapter 2",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Prashanth Neel",
+    "cast": "Yash, Sanjay Dutt, Raveena Tandon, Srinidhi Shetty",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Kannada",
+    "release_date": "2022-04-14",
+    "runtime": "168 min",
+    "worldwide_gross_usd": 150000000,
+    "worldwide_gross_inr": 12450000000,
+    "domestic_gross_usd": 90000000,
+    "domestic_gross_inr": 7470000000,
+    "imdb_rating": 8.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/geUUec6yBTB8YfSYa0y2xrZ3kn7.jpg",
+    "trailer_url": "https://www.youtube.com/embed/JKa05nyUmuQ",
+    "description": "Rocky takes control of the Kolar Gold Fields and his newfound power makes the government as well as his enemies jittery.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt10698680/",
+      "https://en.wikipedia.org/wiki/K.G.F:_Chapter_2",
+      "https://www.imdb.com/title/tt10698680/"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "KGF: Chapter 1",
+    "year": 2018,
+    "category": "Tollywood",
+    "director": "Prashanth Neel",
+    "cast": "Yash, Srinidhi Shetty, Ramachandra Raju, Archana Jois",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Kannada",
+    "release_date": "2018-12-21",
+    "runtime": "156 min",
+    "worldwide_gross_usd": 65000000,
+    "worldwide_gross_inr": 5395000000,
+    "domestic_gross_usd": 39000000,
+    "domestic_gross_inr": 3237000000,
+    "imdb_rating": 8.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/geUUec6yBTB8YfSYa0y2xrZ3kn7.jpg",
+    "trailer_url": "https://www.youtube.com/embed/6-NQ3r0jJ2Y",
+    "description": "The story of Rocky, a young man who rises from poverty to become a feared gangster in the gold mines of Kolar.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt7838252/",
+      "https://en.wikipedia.org/wiki/K.G.F:_Chapter_1",
+      "https://www.imdb.com/title/tt7838252/"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Saaho",
+    "year": 2019,
+    "category": "Tollywood",
+    "director": "Sujeeth",
+    "cast": "Prabhas, Shraddha Kapoor, Neil Nitin Mukesh, Jackie Shroff",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "language": "Telugu",
+    "release_date": "2019-08-30",
+    "runtime": "170 min",
+    "worldwide_gross_usd": 65000000,
+    "worldwide_gross_inr": 5395000000,
+    "domestic_gross_usd": 39000000,
+    "domestic_gross_inr": 3237000000,
+    "imdb_rating": 5,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "An undercover agent must stop a criminal mastermind from stealing a black box containing 2000 crores.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt6788930/",
+      "https://en.wikipedia.org/wiki/Saaho",
+      "https://www.imdb.com/title/tt6788930/"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Pushpa: The Rise",
+    "year": 2021,
+    "category": "Tollywood",
+    "director": "Sukumar",
+    "cast": "Allu Arjun, Rashmika Mandanna, Fahadh Faasil, Sunil",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2021-12-17",
+    "runtime": "179 min",
+    "worldwide_gross_usd": 85000000,
+    "worldwide_gross_inr": 7055000000,
+    "domestic_gross_usd": 51000000,
+    "domestic_gross_inr": 4233000000,
+    "imdb_rating": 7.6,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/Q1NKMph3-v8",
+    "description": "A labourer named Pushpa makes enemies as he rises in the world of red sandalwood smuggling.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt9389998/",
+      "https://en.wikipedia.org/wiki/Pushpa:_The_Rise",
+      "https://www.imdb.com/title/tt9389998/"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Ala Vaikunthapurramuloo",
+    "year": 2020,
+    "category": "Tollywood",
+    "director": "Trivikram Srinivas",
+    "cast": "Allu Arjun, Pooja Hegde, Tabu, Jayaram",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2020-01-12",
+    "runtime": "160 min",
+    "worldwide_gross_usd": 55000000,
+    "worldwide_gross_inr": 4565000000,
+    "domestic_gross_usd": 33000000,
+    "domestic_gross_inr": 2739000000,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A man learns he was switched at birth and sets out to claim his rightful place in his biological family.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt10698680/",
+      "https://en.wikipedia.org/wiki/Ala_Vaikunthapurramuloo",
+      "https://www.imdb.com/title/tt10698680/"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Sarkaru Vaari Paata",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Parasuram",
+    "cast": "Mahesh Babu, Keerthy Suresh, Samuthirakani, Vennela Kishore",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-05-12",
+    "runtime": "163 min",
+    "worldwide_gross_usd": 45000000,
+    "worldwide_gross_inr": 3735000000,
+    "domestic_gross_usd": 27000000,
+    "domestic_gross_inr": 2241000000,
+    "imdb_rating": 6.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A loan agent who is cheated by a woman travels to India to settle scores with her father.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Sarkaru_Vaari_Paata",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Master",
+    "year": 2021,
+    "category": "Tollywood",
+    "director": "Lokesh Kanagaraj",
+    "cast": "Vijay, Vijay Sethupathi, Malavika Mohanan, Arjun Das",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "language": "Tamil",
+    "release_date": "2021-01-13",
+    "runtime": "179 min",
+    "worldwide_gross_usd": 60000000,
+    "worldwide_gross_inr": 4980000000,
+    "domestic_gross_usd": 36000000,
+    "domestic_gross_inr": 2988000000,
+    "imdb_rating": 7,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "An alcoholic professor is sent to a juvenile school, where he clashes with a ruthless gangster.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt10698680/",
+      "https://en.wikipedia.org/wiki/Master_(2021_film)",
+      "https://www.imdb.com/title/tt10698680/"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Vikram",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Lokesh Kanagaraj",
+    "cast": "Kamal Haasan, Vijay Sethupathi, Fahadh Faasil, Narain",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "language": "Tamil",
+    "release_date": "2022-06-03",
+    "runtime": "175 min",
+    "worldwide_gross_usd": 65000000,
+    "worldwide_gross_inr": 5395000000,
+    "domestic_gross_usd": 39000000,
+    "domestic_gross_inr": 3237000000,
+    "imdb_rating": 8.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/OKBMCL-frPU",
+    "description": "A special agent investigates a murder committed by a masked group of serial killers.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt10698680/",
+      "https://en.wikipedia.org/wiki/Vikram_(2022_film)",
+      "https://www.imdb.com/title/tt10698680/"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Ponniyin Selvan: I",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Mani Ratnam",
+    "cast": "Vikram, Aishwarya Rai, Karthi, Trisha",
+    "genres": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "language": "Tamil",
+    "release_date": "2022-09-30",
+    "runtime": "167 min",
+    "worldwide_gross_usd": 70000000,
+    "worldwide_gross_inr": 5810000000,
+    "domestic_gross_usd": 42000000,
+    "domestic_gross_inr": 3486000000,
+    "imdb_rating": 7.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A story about the early days of Arulmozhivarman, who would become the great Chola emperor Rajaraja Chola I.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Ponniyin_Selvan:_I",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Beast",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Nelson Dilipkumar",
+    "cast": "Vijay, Pooja Hegde, Selvaraghavan, Yogi Babu",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "language": "Tamil",
+    "release_date": "2022-04-13",
+    "runtime": "158 min",
+    "worldwide_gross_usd": 50000000,
+    "worldwide_gross_inr": 4150000000,
+    "domestic_gross_usd": 30000000,
+    "domestic_gross_inr": 2490000000,
+    "imdb_rating": 5.3,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A RAW agent must save hundreds of hostages from a shopping mall taken over by terrorists.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Beast_(2022_film)",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Valimai",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "H. Vinoth",
+    "cast": "Ajith Kumar, Huma Qureshi, Karthikeya, Bani J",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "language": "Tamil",
+    "release_date": "2022-02-24",
+    "runtime": "178 min",
+    "worldwide_gross_usd": 45000000,
+    "worldwide_gross_inr": 3735000000,
+    "domestic_gross_usd": 27000000,
+    "domestic_gross_inr": 2241000000,
+    "imdb_rating": 5.8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A police officer is assigned to track down a gang of motorcyclists causing chaos in the city.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Valimai",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Radhe Shyam",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Radha Krishna Kumar",
+    "cast": "Prabhas, Pooja Hegde, Bhagyashree, Krishnamraju",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-03-11",
+    "runtime": "138 min",
+    "worldwide_gross_usd": 40000000,
+    "worldwide_gross_inr": 3320000000,
+    "domestic_gross_usd": 24000000,
+    "domestic_gross_inr": 1992000000,
+    "imdb_rating": 5.4,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A palmist who predicts the future falls in love with a doctor, but his predictions come between them.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Radhe_Shyam",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Acharya",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Koratala Siva",
+    "cast": "Chiranjeevi, Ram Charan, Pooja Hegde, Kajal Aggarwal",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-04-29",
+    "runtime": "150 min",
+    "worldwide_gross_usd": 35000000,
+    "worldwide_gross_inr": 2905000000,
+    "domestic_gross_usd": 21000000,
+    "domestic_gross_inr": 1743000000,
+    "imdb_rating": 5.5,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A revolutionary rises against a corporate tycoon who is exploiting the poor and destroying nature.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Acharya_(film)",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Bheemla Nayak",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Sagar K Chandra",
+    "cast": "Pawan Kalyan, Rana Daggubati, Nithya Menen, Samuthirakani",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-02-25",
+    "runtime": "150 min",
+    "worldwide_gross_usd": 40000000,
+    "worldwide_gross_inr": 3320000000,
+    "domestic_gross_usd": 24000000,
+    "domestic_gross_inr": 1992000000,
+    "imdb_rating": 7.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A police officer and a local politician clash when their paths cross over a petty issue.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Bheemla_Nayak",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Sita Ramam",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Hanu Raghavapudi",
+    "cast": "Dulquer Salmaan, Mrunal Thakur, Rashmika Mandanna, Sumanth",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-08-05",
+    "runtime": "163 min",
+    "worldwide_gross_usd": 30000000,
+    "worldwide_gross_inr": 2490000000,
+    "domestic_gross_usd": 18000000,
+    "domestic_gross_inr": 1494000000,
+    "imdb_rating": 9,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "An orphaned soldier's life changes after he receives a letter from a girl named Sita Mahalakshmi.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Sita_Ramam",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Liger",
+    "year": 2022,
+    "category": "Tollywood",
+    "director": "Puri Jagannadh",
+    "cast": "Vijay Deverakonda, Ananya Panday, Ramya Krishna, Ronit Roy",
+    "genres": [
+      "Action",
+      "Drama",
+      "Sport"
+    ],
+    "language": "Telugu",
+    "release_date": "2022-08-25",
+    "runtime": "150 min",
+    "worldwide_gross_usd": 25000000,
+    "worldwide_gross_inr": 2075000000,
+    "domestic_gross_usd": 15000000,
+    "domestic_gross_inr": 1245000000,
+    "imdb_rating": 3.2,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/vyX4toD395E",
+    "description": "A mixed martial arts fighter from Mumbai dreams of becoming a world champion.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345678/",
+      "https://en.wikipedia.org/wiki/Liger_(film)",
+      "https://www.imdb.com/title/tt12345678/"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Pushpa: The Rule",
+    "year": 2024,
+    "category": "Tollywood",
+    "director": "Sukumar",
+    "cast": "Allu Arjun, Rashmika Mandanna, Fahadh Faasil, Sunil",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "release_date": "2024-12-06",
+    "runtime": "180 min",
+    "worldwide_gross_usd": 120000000,
+    "worldwide_gross_inr": 9960000000,
+    "domestic_gross_usd": 72000000,
+    "domestic_gross_inr": 5976000000,
+    "imdb_rating": 8,
+    "poster_url": "https://image.tmdb.org/t/p/w500/9Ql5WJ2rJqQ6YvqQ6xQ6YvqQ6xQ.jpg",
+    "trailer_url": "https://www.youtube.com/embed/Q1NKMph3-v8",
+    "description": "The continuation of Pushpa's story as he rises to become the undisputed king of the red sandalwood smuggling syndicate.",
+    "source_urls": [
+      "https://www.boxofficemojo.com/title/tt12345679/",
+      "https://en.wikipedia.org/wiki/Pushpa:_The_Rule",
+      "https://www.imdb.com/title/tt12345679/"
+    ]
+  }
+]
+

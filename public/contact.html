@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — CineVerse Analytics</title>
+    <meta name="description" content="Get in touch with CineVerse Analytics. Send feedback, suggestions, or inquiries about the platform.">
+    <meta name="keywords" content="contact cineverse, feedback, movie data, box office inquiry">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cineverse.com/contact.html">
+    <meta property="og:title" content="Contact — CineVerse Analytics">
+    <meta property="og:description" content="Get in touch with CineVerse Analytics. Send feedback, suggestions, or inquiries about the platform.">
+    <meta property="og:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — CineVerse Analytics">
+    <meta name="twitter:description" content="Get in touch with CineVerse Analytics. Send feedback, suggestions, or inquiries about the platform.">
+    <meta name="twitter:image" content="https://cineverse.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="logo">🎬 CineVerse</div>
+        <ul class="nav-links">
+            <li><a href="index.html">🎬 Home</a></li>
+            <li><a href="movies.html">🎞️ All Movies</a></li>
+            <li><a href="hollywood.html">🌍 Hollywood</a></li>
+            <li><a href="bollywood.html">🎥 Bollywood</a></li>
+            <li><a href="tollywood.html">🎭 Tollywood</a></li>
+            <li><a href="top10.html">🏅 Top 10</a></li>
+            <li><a href="analytics.html">📊 Analytics</a></li>
+            <li><a href="compare.html">⚖️ Compare</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="contact.html">💌 Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+
+    <section style="padding: 4rem 2rem;">
+        <h1 style="text-align: center; font-family: 'Orbitron', sans-serif; font-size: 3rem; margin-bottom: 3rem; color: var(--text);">
+            💌 Contact Us
+        </h1>
+
+        <div class="form-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Send Message
+                </button>
+            </form>
+            <div id="form-message" style="margin-top: 1.5rem; text-align: center; display: none;"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p style="font-size: 0.75rem; line-height: 1.5; margin: 0;">Your Ultimate Box Office Analytics Platform | © 2025 CineVerse Analytics | Developed by Mohammad Aakib Bhat</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">↑</button>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
