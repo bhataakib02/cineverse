@@ -84,7 +84,10 @@
       "https://www.boxofficemojo.com/title/tt4154796/",
       "https://en.wikipedia.org/wiki/Avengers:_Endgame",
       "https://www.imdb.com/title/tt4154796/"
-    ]
+    ],
+    "international_gross_usd": 669344,
+    "international_gross_inr": 55555555,
+    "updatedAt": "2025-11-04T14:06:50.003Z"
   },
   {
     "id": 4,
@@ -1435,7 +1438,9 @@
       "https://www.boxofficemojo.com/title/tt12345679/",
       "https://en.wikipedia.org/wiki/Pushpa:_The_Rule",
       "https://www.imdb.com/title/tt12345679/"
-    ]
+    ],
+    "international_gross_usd": 0,
+    "international_gross_inr": 0,
+    "updatedAt": "2025-11-04T14:34:04.509Z"
   }
 ]
-

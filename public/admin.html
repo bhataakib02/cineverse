@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel — CineVerse</title>
+    <title>Admin Panel — CineVerse Analytics</title>
+    <meta name="description" content="Admin dashboard for CineVerse Analytics. Manage movies, view contact messages, and control the platform.">
+    <meta name="keywords" content="admin panel, movie management, content management, cineverse admin">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cineverse.com/admin.html">
+    <meta property="og:title" content="Admin Panel — CineVerse Analytics">
+    <meta property="og:description" content="Admin dashboard for CineVerse Analytics">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Admin Panel — CineVerse Analytics">
+    <meta name="twitter:description" content="Admin dashboard for CineVerse Analytics">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
 </head>
@@ -19,11 +34,18 @@
             <li><a href="hollywood.html">🌍 Hollywood</a></li>
             <li><a href="bollywood.html">🎥 Bollywood</a></li>
             <li><a href="tollywood.html">🎭 Tollywood</a></li>
-            <li><a href="top10.html">🏅 Top 10</a></li>
+            <li><a href="analytics.html">📊 Analytics</a></li>
+            <li><a href="compare.html">⚖️ Compare</a></li>
             <li><a href="about.html">ℹ️ About</a></li>
             <li><a href="contact.html">💌 Contact</a></li>
+            <li><a href="admin.html" class="active">🔐 Admin</a></li>
         </ul>
         <button class="theme-toggle" id="theme-toggle">🌙</button>
+        <button class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <div class="admin-container">
@@ -161,19 +183,101 @@
         </div>
     </div>
 
+    <!-- Edit Movie Modal -->
+    <div id="edit-movie-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="font-family: 'Orbitron', sans-serif; margin: 0;">✏️ Edit Movie</h2>
+                <button class="modal-close" onclick="closeEditModal()">&times;</button>
+            </div>
+            <form id="edit-movie-form">
+                <input type="hidden" id="edit-movie-id">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                    <div class="form-group">
+                        <label for="edit-movie-title">Title</label>
+                        <input type="text" id="edit-movie-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-year">Year</label>
+                        <input type="number" id="edit-movie-year" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-category">Category</label>
+                        <select id="edit-movie-category" required>
+                            <option value="Hollywood">Hollywood</option>
+                            <option value="Bollywood">Bollywood</option>
+                            <option value="Tollywood">Tollywood</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-genre">Genre</label>
+                        <input type="text" id="edit-movie-genre" required placeholder="Action, Drama">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-director">Director</label>
+                        <input type="text" id="edit-movie-director" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-cast">Cast</label>
+                        <input type="text" id="edit-movie-cast" required placeholder="Actor 1, Actor 2">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-language">Language</label>
+                        <input type="text" id="edit-movie-language" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-runtime">Runtime</label>
+                        <input type="text" id="edit-movie-runtime" required placeholder="180 min">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-releaseDate">Release Date</label>
+                        <input type="date" id="edit-movie-releaseDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-domestic">Domestic Gross (₹)</label>
+                        <input type="number" id="edit-movie-domestic" required placeholder="Enter in INR">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-international">International Gross (₹)</label>
+                        <input type="number" id="edit-movie-international" required placeholder="Enter in INR">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-worldwideGross">Worldwide Gross (₹)</label>
+                        <input type="number" id="edit-movie-worldwideGross" required placeholder="Enter in INR">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-movie-imdb">IMDb Rating (0-10)</label>
+                        <input type="number" id="edit-movie-imdb" step="0.1" min="0" max="10" placeholder="7.5">
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label for="edit-movie-posterURL">Poster URL</label>
+                        <input type="url" id="edit-movie-posterURL" required>
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label for="edit-movie-trailerURL">Trailer URL (YouTube Embed)</label>
+                        <input type="url" id="edit-movie-trailerURL" placeholder="https://www.youtube.com/embed/...">
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label for="edit-movie-description">Description</label>
+                        <textarea id="edit-movie-description" rows="4"></textarea>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <button type="submit" class="btn btn-primary" style="flex: 1;">
+                        Update Movie
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="closeEditModal()" style="flex: 1;">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+            <div id="edit-movie-message" style="margin-top: 1.5rem; text-align: center;"></div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer-content">
-            <h3 style="margin-bottom: 1rem;">🎬 CineVerse</h3>
-            <p style="opacity: 0.7; margin-bottom: 1rem;">Global Cinema Analytics Platform</p>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Twitter">🐦</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="YouTube">📺</a>
-            </div>
-            <div class="footer-credits">
-                <p>Designed & Developed by Mohammad Aakib Bhat | Web Technology Major Project | © 2025</p>
-            </div>
+            <p style="font-size: 0.75rem; line-height: 1.5; margin: 0;">Your Ultimate Box Office Analytics Platform | © 2025 CineVerse Analytics | Developed by Mohammad Aakib Bhat</p>
         </div>
     </footer>
 

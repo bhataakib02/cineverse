@@ -37,13 +37,18 @@
             <li><a href="hollywood.html">🌍 Hollywood</a></li>
             <li><a href="bollywood.html">🎥 Bollywood</a></li>
             <li><a href="tollywood.html">🎭 Tollywood</a></li>
-            <li><a href="top10.html">🏅 Top 10</a></li>
             <li><a href="analytics.html" class="active">📊 Analytics</a></li>
             <li><a href="compare.html">⚖️ Compare</a></li>
             <li><a href="about.html">ℹ️ About</a></li>
             <li><a href="contact.html">💌 Contact</a></li>
+            <li><a href="admin.html">🔐 Admin</a></li>
         </ul>
         <button class="theme-toggle" id="theme-toggle">🌙</button>
+        <button class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <section style="padding: 4rem 2rem; max-width: 1600px; margin: 0 auto;">
@@ -79,37 +84,49 @@
             <!-- Top 10 Movies Bar Chart -->
             <div class="chart-card">
                 <h2 class="chart-title">🏆 Top 10 Movies by Gross (₹ Crores)</h2>
-                <canvas id="top10BarChart"></canvas>
+                <div style="position: relative; height: 400px; width: 100%;">
+                    <canvas id="top10BarChart"></canvas>
+                </div>
             </div>
 
             <!-- Industry Comparison Pie Chart -->
             <div class="chart-card">
                 <h2 class="chart-title">💰 Industry Comparison</h2>
-                <canvas id="industryPieChart"></canvas>
+                <div style="position: relative; height: 400px; width: 100%;">
+                    <canvas id="industryPieChart"></canvas>
+                </div>
             </div>
 
             <!-- Gross Earnings per Year Line Chart -->
             <div class="chart-card">
                 <h2 class="chart-title">📅 Gross Earnings per Year</h2>
-                <canvas id="yearLineChart"></canvas>
+                <div style="position: relative; height: 400px; width: 100%;">
+                    <canvas id="yearLineChart"></canvas>
+                </div>
             </div>
 
             <!-- Genre Distribution Donut Chart -->
             <div class="chart-card">
                 <h2 class="chart-title">🎬 Genre Distribution</h2>
-                <canvas id="genreDonutChart"></canvas>
+                <div style="position: relative; height: 400px; width: 100%;">
+                    <canvas id="genreDonutChart"></canvas>
+                </div>
             </div>
 
             <!-- Top 5 Directors Horizontal Bar -->
             <div class="chart-card">
                 <h2 class="chart-title">🎥 Top 5 Directors by Lifetime Earnings</h2>
-                <canvas id="directorsBarChart"></canvas>
+                <div style="position: relative; height: 400px; width: 100%;">
+                    <canvas id="directorsBarChart"></canvas>
+                </div>
             </div>
 
             <!-- Year-on-Year Growth -->
             <div class="chart-card">
                 <h2 class="chart-title">🔺 Year-on-Year Growth</h2>
-                <canvas id="growthLineChart"></canvas>
+                <div style="position: relative; height: 400px; width: 100%;">
+                    <canvas id="growthLineChart"></canvas>
+                </div>
             </div>
         </div>
     </section>

@@ -6,43 +6,71 @@ let chartInstances = {};
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('Analytics page loaded');
+    
+    // Check if Chart.js is loaded
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js library not loaded!');
+        showError('Chart.js library not loaded. Please refresh the page.');
+        return;
+    }
+    
     await loadAnalyticsData();
     setupScrollToTop();
 });
+
+// Also try immediately if DOM is already loaded
+if (document.readyState === 'loading') {
+    // DOM is still loading, wait for DOMContentLoaded
+} else {
+    // DOM is already loaded
+    console.log('DOM already loaded for analytics, initializing...');
+    if (typeof Chart !== 'undefined') {
+        loadAnalyticsData();
+    }
+}
 
 // Load all analytics data
 async function loadAnalyticsData() {
     try {
         // Show loading state
-        document.getElementById('stats-grid').innerHTML = `
-            <div class="stat-card" style="grid-column: 1 / -1; text-align: center;">
-                <p style="color: var(--text-secondary);">Loading analytics data...</p>
-            </div>
-        `;
+        const statsGrid = document.getElementById('stats-grid');
+        if (statsGrid) {
+            statsGrid.innerHTML = `
+                <div class="stat-card" style="grid-column: 1 / -1; text-align: center;">
+                    <p style="color: var(--text-secondary);">Loading analytics data...</p>
+                </div>
+            `;
+        }
 
         // Fetch all movies
+        console.log('Fetching movies for analytics...');
         allMovies = await fetchMovies();
         console.log('Movies loaded for analytics:', allMovies.length);
 
         if (!allMovies || allMovies.length === 0) {
-            showError('No movies data available');
+            showError('No movies data available. Please ensure the server is running and movies are loaded.');
             return;
         }
 
         // Load stats
         loadStats();
         
-        // Load all charts
-        loadTop10BarChart();
-        loadIndustryPieChart();
-        loadYearLineChart();
-        loadGenreDonutChart();
-        loadDirectorsBarChart();
-        loadGrowthLineChart();
+        // Wait for DOM to be ready before creating charts
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                // Load all charts
+                loadTop10BarChart();
+                loadIndustryPieChart();
+                loadYearLineChart();
+                loadGenreDonutChart();
+                loadDirectorsBarChart();
+                loadGrowthLineChart();
+            }, 300);
+        });
         
     } catch (error) {
         console.error('Error loading analytics:', error);
-        showError('Failed to load analytics data. Please try again later.');
+        showError('Failed to load analytics data: ' + error.message + '. Please try again later.');
     }
 }
 
@@ -52,29 +80,70 @@ function loadStats() {
     const currency = getCurrency();
     
     const totalRevenue = allMovies.reduce((sum, m) => sum + getGrossAmount(m, currency), 0);
-    const avgRating = allMovies.reduce((sum, m) => sum + (m.imdb_rating || 0), 0) / totalMovies;
+    const avgRating = totalMovies > 0 ? allMovies.reduce((sum, m) => sum + (m.imdb_rating || 0), 0) / totalMovies : 0;
     const totalBudget = allMovies.reduce((sum, m) => sum + (m.budget_inr || (m.budget_usd || 0) * 83), 0);
 
-    document.getElementById('total-movies').textContent = totalMovies;
-    document.getElementById('total-revenue').textContent = formatCurrency(totalRevenue, currency);
-    document.getElementById('avg-rating').textContent = avgRating.toFixed(1) + '/10';
-    document.getElementById('total-budget').textContent = formatCurrency(totalBudget, currency);
+    const totalMoviesEl = document.getElementById('total-movies');
+    const totalRevenueEl = document.getElementById('total-revenue');
+    const avgRatingEl = document.getElementById('avg-rating');
+    const totalBudgetEl = document.getElementById('total-budget');
+
+    if (totalMoviesEl) totalMoviesEl.textContent = totalMovies;
+    if (totalRevenueEl) totalRevenueEl.textContent = formatCurrency(totalRevenue, currency);
+    if (avgRatingEl) avgRatingEl.textContent = avgRating.toFixed(1) + '/10';
+    if (totalBudgetEl) totalBudgetEl.textContent = formatCurrency(totalBudget, currency);
 }
 
 // Top 10 Movies Bar Chart
 function loadTop10BarChart() {
     const chartEl = document.getElementById('top10BarChart');
-    if (!chartEl) return;
+    if (!chartEl) {
+        console.error('Top 10 chart element not found');
+        return;
+    }
+
+    if (!allMovies || allMovies.length === 0) {
+        console.warn('No movies data for chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No movies data available</p>';
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Chart.js library not loaded</p>';
+        return;
+    }
 
     const top10 = allMovies
+        .filter(m => m && m.title)
         .sort((a, b) => getGrossAmount(b, 'INR') - getGrossAmount(a, 'INR'))
         .slice(0, 10);
 
-    const labels = top10.map(m => m.title.length > 15 ? m.title.substring(0, 15) + '...' : m.title);
+    if (top10.length === 0) {
+        console.warn('No valid movies for top 10 chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No valid movies data available</p>';
+        return;
+    }
+
+    const labels = top10.map(m => (m.title && m.title.length > 15 ? m.title.substring(0, 15) + '...' : m.title) || 'Unknown');
     const data = top10.map(m => getGrossAmount(m, 'INR') / 10000000); // Convert to crores
+    
+    if (data.every(d => d === 0 || isNaN(d))) {
+        console.warn('No valid revenue data for chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No revenue data available</p>';
+        return;
+    }
+
+    // Ensure container is visible
+    const container = chartEl.parentElement;
+    if (container) {
+        container.style.display = 'block';
+    }
 
     destroyChart('top10BarChart');
-    chartInstances.top10BarChart = new Chart(chartEl.getContext('2d'), {
+    
+    try {
+        chartInstances.top10BarChart = new Chart(chartEl.getContext('2d'), {
         type: 'bar',
         data: {
             labels: labels,
@@ -86,24 +155,59 @@ function loadTop10BarChart() {
                 borderWidth: 2
             }]
         },
-        options: getChartOptions()
-    });
+        options: {
+            ...getChartOptions(),
+            maintainAspectRatio: false
+        }
+        });
+        console.log('Top 10 bar chart created successfully');
+    } catch (error) {
+        console.error('Error creating top 10 chart:', error);
+    }
 }
 
 // Industry Comparison Pie Chart
 function loadIndustryPieChart() {
     const chartEl = document.getElementById('industryPieChart');
-    if (!chartEl) return;
+    if (!chartEl) {
+        console.error('Industry pie chart element not found');
+        return;
+    }
+
+    if (!allMovies || allMovies.length === 0) {
+        console.warn('No movies data for industry chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No movies data available</p>';
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Chart.js library not loaded</p>';
+        return;
+    }
 
     const industries = ['Hollywood', 'Bollywood', 'Tollywood'];
     const data = industries.map(industry => {
         return allMovies
-            .filter(m => m.category === industry)
+            .filter(m => m && m.category === industry)
             .reduce((sum, m) => sum + getGrossAmount(m, 'INR'), 0) / 10000000;
     });
 
+    if (data.every(d => d === 0)) {
+        console.warn('No valid industry data for chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No industry data available</p>';
+        return;
+    }
+
+    const container = chartEl.parentElement;
+    if (container) {
+        container.style.display = 'block';
+    }
+
     destroyChart('industryPieChart');
-    chartInstances.industryPieChart = new Chart(chartEl.getContext('2d'), {
+    
+    try {
+        chartInstances.industryPieChart = new Chart(chartEl.getContext('2d'), {
         type: 'pie',
         data: {
             labels: industries,
@@ -133,28 +237,62 @@ function loadIndustryPieChart() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
-    });
+        });
+        console.log('Industry pie chart created successfully');
+    } catch (error) {
+        console.error('Error creating industry pie chart:', error);
+    }
 }
 
 // Gross Earnings per Year Line Chart
 function loadYearLineChart() {
     const chartEl = document.getElementById('yearLineChart');
-    if (!chartEl) return;
+    if (!chartEl) {
+        console.error('Year line chart element not found');
+        return;
+    }
+
+    if (!allMovies || allMovies.length === 0) {
+        console.warn('No movies data for year chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No movies data available</p>';
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Chart.js library not loaded</p>';
+        return;
+    }
 
     const yearData = {};
     allMovies.forEach(movie => {
+        if (!movie || !movie.year) return;
         const year = movie.year;
         if (!yearData[year]) yearData[year] = 0;
         yearData[year] += getGrossAmount(movie, 'INR') / 10000000;
     });
 
     const years = Object.keys(yearData).sort();
+    if (years.length === 0) {
+        console.warn('No year data available');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No year data available</p>';
+        return;
+    }
+
     const revenues = years.map(year => yearData[year]);
 
+    const container = chartEl.parentElement;
+    if (container) {
+        container.style.display = 'block';
+    }
+
     destroyChart('yearLineChart');
-    chartInstances.yearLineChart = new Chart(chartEl.getContext('2d'), {
+    
+    try {
+        chartInstances.yearLineChart = new Chart(chartEl.getContext('2d'), {
         type: 'line',
         data: {
             labels: years,
@@ -168,19 +306,43 @@ function loadYearLineChart() {
                 tension: 0.4
             }]
         },
-        options: getChartOptions()
-    });
+        options: {
+            ...getChartOptions(),
+            maintainAspectRatio: false
+        }
+        });
+        console.log('Top 10 bar chart created successfully');
+    } catch (error) {
+        console.error('Error creating top 10 chart:', error);
+    }
 }
 
 // Genre Distribution Donut Chart
 function loadGenreDonutChart() {
     const chartEl = document.getElementById('genreDonutChart');
-    if (!chartEl) return;
+    if (!chartEl) {
+        console.error('Genre donut chart element not found');
+        return;
+    }
+
+    if (!allMovies || allMovies.length === 0) {
+        console.warn('No movies data for genre chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No movies data available</p>';
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Chart.js library not loaded</p>';
+        return;
+    }
 
     const genreData = {};
     allMovies.forEach(movie => {
-        const genres = Array.isArray(movie.genres) ? movie.genres : [movie.genres || 'Unknown'];
+        if (!movie) return;
+        const genres = Array.isArray(movie.genres) ? movie.genres : (movie.genres ? [movie.genres] : ['Unknown']);
         genres.forEach(genre => {
+            if (!genre) return;
             if (!genreData[genre]) genreData[genre] = 0;
             genreData[genre]++;
         });
@@ -190,13 +352,26 @@ function loadGenreDonutChart() {
         .sort((a, b) => b[1] - a[1])
         .slice(0, 8); // Top 8 genres
 
+    if (sortedGenres.length === 0) {
+        console.warn('No genre data available');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No genre data available</p>';
+        return;
+    }
+
     const labels = sortedGenres.map(([genre]) => genre);
     const data = sortedGenres.map(([, count]) => count);
 
     const colors = generateColors(data.length);
 
+    const container = chartEl.parentElement;
+    if (container) {
+        container.style.display = 'block';
+    }
+
     destroyChart('genreDonutChart');
-    chartInstances.genreDonutChart = new Chart(chartEl.getContext('2d'), {
+    
+    try {
+        chartInstances.genreDonutChart = new Chart(chartEl.getContext('2d'), {
         type: 'doughnut',
         data: {
             labels: labels,
@@ -217,32 +392,67 @@ function loadGenreDonutChart() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
-    });
+        });
+        console.log('Genre donut chart created successfully');
+    } catch (error) {
+        console.error('Error creating genre donut chart:', error);
+    }
 }
 
 // Top 5 Directors Horizontal Bar
 function loadDirectorsBarChart() {
     const chartEl = document.getElementById('directorsBarChart');
-    if (!chartEl) return;
+    if (!chartEl) {
+        console.error('Directors bar chart element not found');
+        return;
+    }
+
+    if (!allMovies || allMovies.length === 0) {
+        console.warn('No movies data for directors chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No movies data available</p>';
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Chart.js library not loaded</p>';
+        return;
+    }
 
     const directorData = {};
     allMovies.forEach(movie => {
+        if (!movie) return;
         const director = movie.director || 'Unknown';
         if (!directorData[director]) directorData[director] = 0;
         directorData[director] += getGrossAmount(movie, 'INR') / 10000000;
     });
 
     const topDirectors = Object.entries(directorData)
+        .filter(([director]) => director !== 'Unknown')
         .sort((a, b) => b[1] - a[1])
         .slice(0, 5);
+
+    if (topDirectors.length === 0) {
+        console.warn('No director data available');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No director data available</p>';
+        return;
+    }
 
     const labels = topDirectors.map(([director]) => director);
     const data = topDirectors.map(([, revenue]) => revenue);
 
+    const container = chartEl.parentElement;
+    if (container) {
+        container.style.display = 'block';
+    }
+
     destroyChart('directorsBarChart');
-    chartInstances.directorsBarChart = new Chart(chartEl.getContext('2d'), {
+    
+    try {
+        chartInstances.directorsBarChart = new Chart(chartEl.getContext('2d'), {
         type: 'bar',
         data: {
             labels: labels,
@@ -256,24 +466,51 @@ function loadDirectorsBarChart() {
         },
         options: {
             ...getChartOptions(),
-            indexAxis: 'y'
+            indexAxis: 'y',
+            maintainAspectRatio: false
         }
-    });
+        });
+        console.log('Directors bar chart created successfully');
+    } catch (error) {
+        console.error('Error creating directors bar chart:', error);
+    }
 }
 
 // Year-on-Year Growth Line Chart
 function loadGrowthLineChart() {
     const chartEl = document.getElementById('growthLineChart');
-    if (!chartEl) return;
+    if (!chartEl) {
+        console.error('Growth line chart element not found');
+        return;
+    }
+
+    if (!allMovies || allMovies.length === 0) {
+        console.warn('No movies data for growth chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">No movies data available</p>';
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Chart.js library not loaded</p>';
+        return;
+    }
 
     const yearData = {};
     allMovies.forEach(movie => {
+        if (!movie || !movie.year) return;
         const year = movie.year;
         if (!yearData[year]) yearData[year] = 0;
         yearData[year] += getGrossAmount(movie, 'INR') / 10000000;
     });
 
     const years = Object.keys(yearData).sort();
+    if (years.length < 2) {
+        console.warn('Not enough year data for growth chart');
+        chartEl.parentElement.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Not enough year data for growth chart (need at least 2 years)</p>';
+        return;
+    }
+
     const revenues = years.map(year => yearData[year]);
     const growth = revenues.map((rev, i) => {
         if (i === 0) return 0;
@@ -281,8 +518,15 @@ function loadGrowthLineChart() {
         return prev > 0 ? ((rev - prev) / prev * 100) : 0;
     });
 
+    const container = chartEl.parentElement;
+    if (container) {
+        container.style.display = 'block';
+    }
+
     destroyChart('growthLineChart');
-    chartInstances.growthLineChart = new Chart(chartEl.getContext('2d'), {
+    
+    try {
+        chartInstances.growthLineChart = new Chart(chartEl.getContext('2d'), {
         type: 'line',
         data: {
             labels: years,
@@ -296,15 +540,22 @@ function loadGrowthLineChart() {
                 tension: 0.4
             }]
         },
-        options: getChartOptions()
-    });
+        options: {
+            ...getChartOptions(),
+            maintainAspectRatio: false
+        }
+        });
+        console.log('Growth line chart created successfully');
+    } catch (error) {
+        console.error('Error creating growth line chart:', error);
+    }
 }
 
 // Helper: Get common chart options
 function getChartOptions() {
     return {
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 labels: {

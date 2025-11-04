@@ -30,21 +30,29 @@ router.get('/', (req, res) => {
 router.get('/top10', (req, res) => {
   try {
     const movies = readMovies();
+    
     if (!movies || movies.length === 0) {
       return res.json([]);
     }
-    const sorted = movies
-      .filter(m => m && (m.worldwide_gross_usd || m.worldwideGross))
+    
+    // Filter movies with worldwide gross data
+    const moviesWithGross = movies.filter(m => {
+      return m && (m.worldwide_gross_usd || m.worldwide_gross_inr || m.worldwideGross);
+    });
+    
+    // Sort by worldwide gross (prioritize USD, then INR)
+    const sorted = moviesWithGross
       .sort((a, b) => {
-        const grossA = a.worldwide_gross_usd || a.worldwideGross || 0;
-        const grossB = b.worldwide_gross_usd || b.worldwideGross || 0;
+        const grossA = a.worldwide_gross_usd || (a.worldwide_gross_inr ? a.worldwide_gross_inr / 83 : 0) || a.worldwideGross || 0;
+        const grossB = b.worldwide_gross_usd || (b.worldwide_gross_inr ? b.worldwide_gross_inr / 83 : 0) || b.worldwideGross || 0;
         return grossB - grossA;
       })
       .slice(0, 10);
+    
     res.json(sorted);
   } catch (error) {
     console.error('Error fetching top 10:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error', message: error.message });
   }
 });
 
